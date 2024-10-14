@@ -7,10 +7,10 @@ case class Location(
                      rd: RD,
                      placement: String,
                      side: String,
-                     bearing: Int,
+                     bearing: Option[Int],
                      fraction: Option[Double],
                      driving_direction: Option[String],
-                     road: Road,
+                     road: Option[Road],
                      county: County
                    )
 
@@ -39,7 +39,7 @@ case class County(
                  )
 
 case class Details(
-                    image: String,
+                    image: Option[String],
                     first_seen: String,
                     last_seen: String
                   )
@@ -50,7 +50,7 @@ case class TextSign(
                    )
 
 case class TrafficSign(
-                        id: Long,
+                        id: Option[Long],
                         ndw_id: String,
                         `type`: String,
                         schema_version: String,

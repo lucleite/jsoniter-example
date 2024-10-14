@@ -25,7 +25,7 @@ chmod +x ./run_benchmark.sh
 ./run_benchmark.sh
 ```
 
-The  --force-rebuild flag can be used to force a rebuild of the Docker image.
+The --force-rebuild flag can be used to force a rebuild of the Docker image i.e. the code has changed.
 
 ```bash
 ./run_benchmark.sh --force-rebuild

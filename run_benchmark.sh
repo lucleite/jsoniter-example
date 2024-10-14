@@ -25,7 +25,8 @@ fi
 # Run the Docker container with resource limits
 docker run --rm \
   --cpus="1" \
-  --memory="4g" \
-  --memory-swap="4g" \
+  --memory="12g" \
+  --memory-swap="12g" \
+  -e JAVA_OPTS="-Xmx6g -XX:+UseG1GC" \
   $IMAGE_NAME
 
